@@ -1,0 +1,219 @@
+/*样式清零*/
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,img,div,fieldset,table,td,dl,dt,dd,input{padding:0; margin:0;font-size:16px; font-family: "黑体","微软雅黑"; color:#1a1a1a;}
+img{border:none; display: block;}
+ul,li{list-style:none;}
+input,select,textarea{outline:none;}
+textarea{resize:none;}
+a{text-decoration: none; }
+/*@font-face {*/
+    /*font-family: 'iconfont';*/
+    /*src: url('//http://at.alicdn.com/t/font_1469410270_4028482.eot'); !* IE9*!*/
+    /*src: url('//http://at.alicdn.com/t/font_1469410270_4028482.eot?#iefix') format('embedded-opentype'), !* IE6-IE8 *!*/
+    /*url('//http://at.alicdn.com/t/font_1469410270_4028482.woff') format('woff'), !* chrome、firefox *!*/
+    /*url('//http://at.alicdn.com/t/font_1469410270_4028482.ttf') format('truetype'), !* chrome、firefox、opera、Safari, Android, iOS 4.2+*!*/
+    /*url('//http://at.alicdn.com/t/font_1469410270_4028482.svg#iconfont') format('svg'); !* iOS 4.1- *!*/
+/*}*/
+
+/*.iconfont{*/
+    /*font-family:"iconfont";*/
+    /*font-size:16px;*/
+    /*font-style:normal;*/
+/*}*/
+
+
+
+/*顶部导航*/
+header{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:80px;
+    background: #444;
+    z-index: 2;
+}
+header .logo{
+    width:280px;
+    height: 100%;
+    float: left;
+    margin-left:20px;
+    position: relative;
+}
+header .logo .logo-pic{
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:8px;
+    margin:auto;
+    width:60px;
+    height:60px;
+    background: #2120ff;
+    border-radius:50%;
+}
+header .logo .logo-txt{
+    width:180px;
+    height:60px;
+    float: right;
+    margin-top:10px;
+    margin-right:20px;
+    text-align: center;
+    line-height:30px;
+}
+header .logo .logo-txt h3{
+    color: #fff;
+    font-weight:lighter;
+}
+header .logo .logo-txt span{
+    display: block;
+    width:80%;
+    margin:0 20px;
+    height:1px;
+    background: #fff;
+}
+header .logo .logo-txt p{
+    color: #fff;
+    font-weight:lighter;
+}
+#menu{
+    height:80px;
+    width:auto;
+    float: right;
+    margin-right:80px;
+    text-align: justify;
+    display: none;
+
+}
+#menu li{
+    display: inline-block;
+    margin:0 20px;
+    height:100%;
+    line-height: 80px;
+}
+#menu li a{
+    color: #fff;
+    font-size:16px;
+    transition: opacity .5s ease;
+}
+#menu li a:hover{
+    opacity: .6;
+}
+
+.top-nav{
+    position: relative;
+}
+.top-nav .menu-btn{
+    width: 30px;
+    height:30px;
+    float: right;
+    margin-right:5%;
+    margin-top: 30px;
+    text-align: center;
+    cursor: pointer;
+    display: block;
+    position: relative;
+
+}
+.top-nav .menu-btn span{
+    position: absolute;
+    display: inline-block;
+    width:25px;
+    height:3px;
+    background: #ffffff;
+    border-radius:2px;
+    transition: transform .3s ease-out;
+}
+.top-nav .menu-btn span:nth-child(1){
+    top: 3px;
+}
+.top-nav .menu-btn span:nth-child(2){
+    top: 13px;
+}
+.top-nav .cross-btn span:nth-child(1){
+    transform:rotate(45deg);
+    top:7px;
+}
+.top-nav .cross-btn span:nth-child(2){
+    transform:rotate(-45deg);
+    top:7px;
+}
+#small-menu{
+    position: absolute;
+    top:80px;
+    right:-300px;
+    width:300px;
+    background: rgb(50,50,50);
+    box-sizing: border-box;
+    transition: right .5s ease-out;
+}
+#small-menu li{
+    width:90%;
+    height:12.5%;
+    margin:0 auto;
+    border-bottom:1px solid #666;
+    text-align: left;
+    opacity: 0;
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+    transform:translateX(100%);
+}
+#small-menu li:nth-child(1){
+    transition-delay: 300ms,300ms;
+}
+#small-menu li:nth-child(2){
+    transition-delay: 350ms,350ms;
+}
+#small-menu li:nth-child(3){
+    transition-delay: 400ms,400ms;
+}
+#small-menu li:nth-child(4){
+    transition-delay: 450ms,450ms;
+}
+#small-menu li a{
+    display: inline-block;
+    margin-top: 40px;
+    font-size:18px;
+    color: #fff;
+    transition: opacity .5s ease;
+}
+#small-menu li a:hover{
+    opacity: .7;
+}
+@media screen and (min-width:768px ) {
+    .top-nav .menu-btn{
+        display: none;
+    }
+    #menu{
+        display: block;
+    }
+    #small-menu{
+        right:-300px;
+    }
+}
+/*.icon-home:before{*/
+    /*display:inline-block;*/
+    /*width:26px;*/
+    /*height:26px;*/
+    /*content: "";*/
+    /*background: url("../img/首页-首页.svg") no-repeat center;*/
+/*}*/
+/*.icon-work:before{*/
+    /*display:inline-block;*/
+    /*width:26px;*/
+    /*height:26px;*/
+    /*content: "";*/
+    /*background: url("../img/作品集.svg") no-repeat center;*/
+
+/*}*/
+/*.icon-blog:before{*/
+    /*display:inline-block;*/
+    /*width:26px;*/
+    /*height:26px;*/
+    /*content: "";*/
+    /*background: url("../img/-博客.svg") no-repeat center;*/
+/*}*/
+/*.icon-git:before{*/
+    /*display:inline-block;*/
+    /*width:26px;*/
+    /*height:26px;*/
+    /*content: "";*/
+    /*background: url("../img/github.svg") no-repeat center;*/
+/*}*/

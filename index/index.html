@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TJ WEB</title>
+    <link rel="stylesheet" href="css/fullpage.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.fullPage.js"></script>
+    <script src="js/index.js"></script>
+    <script>
+        $(function () {
+            $('#dowebok').fullpage({
+                sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#f90'],
+                'navigation':true,
+                anchors: ['page1', 'page2', 'page3', 'page4'],
+                menu: '#menu',
+                navigationPosition:"left"
+
+            });
+
+        })
+    </script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <div class="logo-pic"></div>
+            <div class="logo-txt">
+                <h3>Personal Resume</h3>
+                <span></span>
+                <p>前端工程师</p>
+            </div>
+        </div>
+        <nav class="top-nav">
+            <div class="menu-btn">
+                <span></span>
+                <span></span>
+            </div>
+            <ul id="small-menu" >
+                <li class="iconfont icon-home"><a href="">首页</a></li>
+                <li class="iconfont icon-work" data-menuanchor="page2"><a href="#page2">项目</a></li>
+                <li class="iconfont icon-blog"><a href="">我的博客</a></li>
+                <li class="iconfont icon-git" data-menuanchor="page4"><a href="#page4">github</a></li>
+            </ul>
+            <ul id="menu">
+                <li><a href="#">首页</a></li>
+                <li data-menuanchor="page2"><a href="#page2">项目</a></li>
+                <li><a href="#">个人博客</a></li>
+                <li data-menuanchor="page4"><a href="#page4">github</a></li>
+            </ul>
+        </nav>
+    </header>
+<div id="dowebok">
+    <div class="section">
+        <h3>第一屏</h3>
+    </div>
+    <div class="section">
+        <h3>第二屏</h3>
+    </div>
+    <div class="section">
+        <h3>第三屏</h3>
+    </div>
+    <div class="section">
+        <h3>第四屏</h3>
+    </div>
+    <div class="section">
+        <h3>第五屏</h3>
+    </div>
+    <div class="section">
+        <h3>第六屏</h3>
+    </div>
+</div>
+</body>
+</html>
